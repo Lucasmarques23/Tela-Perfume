@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+.flex-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    text-align: start;
+}
+
+.image img {
+    max-width: 100%; 
+    height: auto;
+}
+
+
+img {
+    border-radius: 10px 0px 0px 10px;
+    width: 400px; 
+}
+
+
+.title {
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-family: "Fraunces", serif; 
+}
+
+h2 {
+    padding-left: 40px;
+    margin: auto;
+    text-align: start;
+}
+
+
+.paragrafo {
+    font-size: 15px;
+    font-weight: normal;
+    padding-bottom: 20px;
+    letter-spacing: 7px;
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+    color: rgb(115, 116, 117);
+    width: 90%;
+    font-weight: 500;
+    line-height: 25px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-size: 2em;
+    font-family: "Fraunces", serif;
+    color: rgb(42, 133, 90);
+    
+}
+
+.subvalor {
+    padding: 20px;
+    font-size: 1em;
+    text-decoration: line-through;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.btn {
+    font-family: "Montserrat", sans-serif;
+    padding: 15px 60px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(42, 133, 90);
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color;
+    transition: transform 0.2s ease-in;
+}
+
+.btn:hover {
+    background-color: rgb(68, 116, 93);
+    transform: scale(1.05);
+}
+
+.btn i {
+    padding-right: 10px;
+}
+
+@media (max-width: 750px) {
+    .flex-container {
+       flex-direction: column;
+       text-align: center;
+       
+    }
+    .image img {
+        border-radius: 10px 10px 0 0;
+        max-width: 100%;
+        
+    }
+    .title, .paragrafo, .description{
+       width: 100%;
+       padding-left: 0;
+       padding-right: 0;
+       margin: 10px 0; 
+    }
+    
+    .price, .subvalor {
+        margin-bottom: 10px;
+    }
+}
